@@ -601,7 +601,7 @@ export default function AdminSkills() {
                     <div className="flex items-center justify-between text-xs">
                       <div className="flex items-center space-x-2">
                         {skill.trending && (
-                          <Badge variant="outline\" className="text-xs bg-purple-50 text-purple-700">
+                          <Badge variant="outline" className="text-xs bg-purple-50 text-purple-700">
                             <TrendingUp className="w-3 h-3 mr-1" />
                             Trending
                           </Badge>
