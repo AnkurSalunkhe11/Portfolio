@@ -1,15 +1,15 @@
 export const portfolioData = {
   personal: {
-    name: "Alex Thompson",
+    name: "Ankur Salunkhe",
     title: "Software Engineer & Mechanical Engineer",
-    email: "alex.thompson@email.com",
-    phone: "+1 (555) 123-4567",
-    linkedin: "https://linkedin.com/in/alexthompson",
-    github: "https://github.com/alexthompson",
-    twitter: "https://twitter.com/alexthompson",
-    website: "https://alexthompson.dev",
+    email: "ankursalunkhe2004@gmail.com",
+    phone: "+91 9325138589",
+    linkedin: "https://linkedin.com/in/ankur-salunkhe",
+    github: "https://github.com/AnkurSalunkhe11 ",
+    twitter: "https://twitter.com",
+    website: "https://ankur-salunkhe.vercel.app/",
     leetcode: "https://leetcode.com/u/noobmaster11/",
-    location: "San Francisco, CA",
+    location: " Pune,IN",
     bio: "Passionate engineer with expertise in both software development and mechanical engineering, bridging the gap between digital innovation and physical systems."
   },
   experience: {

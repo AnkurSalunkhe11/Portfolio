@@ -1,6 +1,8 @@
 'use client';
 
 import { track } from '@vercel/analytics';
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 // Google Analytics 4 Configuration
 export const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_ID || '';

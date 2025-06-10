@@ -25,11 +25,11 @@ export default function AdminAuth() {
       await new Promise(resolve => setTimeout(resolve, 1000));
       
       // Simple authentication (in production, use proper authentication)
-      if (credentials.username === 'admin' && credentials.password === 'portfolio2024') {
+      if (credentials.username === 'Burger99' && credentials.password === 'Ankur#1211@') {
         login({
           id: '1',
-          name: 'Alex Thompson',
-          email: 'alex.thompson@email.com',
+          name: 'Ankur Salunkhe',
+          email: 'ankursalunkhe2004@gmail.com',
           role: 'admin'
         });
         toast({
