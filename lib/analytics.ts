@@ -41,18 +41,26 @@ export const trackPageView = (url: string, title?: string) => {
 
 // Custom event tracking for portfolio interactions
 export const trackEvent = (action: string, category: string, label?: string, value?: number) => {
-  // Track with Vercel Analytics
-  track(action, {
+  // Track with Vercel Analytics - only include properties that have values
+  const trackingData: Record<string, string | number> = {
     category,
-    label,
-    value,
-  });
+  };
+  
+  if (label) {
+    trackingData.label = label;
+  }
+  
+  if (value !== undefined) {
+    trackingData.value = value;
+  }
+
+  track(action, trackingData);
 
   // Track with Google Analytics
   if (typeof window !== 'undefined' && window.gtag) {
     window.gtag('event', action, {
       event_category: category,
-      event_label: label,
+      event_label: label || undefined,
       value: value,
     });
   }
